@@ -17,3 +17,16 @@ Features:
  -   Generate, view and sign CSRs in PKCS #10 and SPKAC formats
  -   Sign JAR files, J2ME MIDlet Applications files and CSRs
  -   Configure a CA Certs KeyStore for use with KeyStore operations
+
+Installation
+------------
+
+For Debian, Ubuntu & friends please use repo:
+
+    wget -O - http://v.s.cz/info@vitexsoftware.cz.gpg.key|sudo apt-key add -
+    echo deb http://v.s.cz/ stable main > /etc/apt/sources.list.d/ease.list
+    aptitude update
+    aptitude install keystore-explorer
+
+
+
