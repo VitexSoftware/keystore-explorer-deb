@@ -1,0 +1,20 @@
+keystore-explorer/kse/res/kse		usr/bin
+keystore-explorer/kse/dist/kse.jar 	usr/share/java
+keystore-explorer/kse/lib/*.jar    	usr/share/java
+keystore-explorer/kse/res/kse.desktop	usr/share/applications/
+
+
+#keystore-explorer/kse/res/icons/install.ico
+#keystore-explorer/kse/res/icons/keystore.icns
+#keystore-explorer/kse/res/icons/keystore.ico
+#keystore-explorer/kse/res/icons/kse.icns
+#keystore-explorer/kse/res/icons/kse.ico
+#keystore-explorer/kse/res/icons/kse.png
+keystore-explorer/kse/res/icons/kse.svg			usr/share/icons/hicolor/scalable/apps
+keystore-explorer/kse/res/icons/kse_128.png		usr/share/icons/hicolor/128x128/apps
+keystore-explorer/kse/res/icons/kse_16.png		usr/share/icons/hicolor/16x16/apps
+keystore-explorer/kse/res/icons/kse_256.png		usr/share/icons/hicolor/256x256/apps
+keystore-explorer/kse/res/icons/kse_32.png		usr/share/icons/hicolor/32x32/apps
+keystore-explorer/kse/res/icons/kse_48.png		usr/share/icons/hicolor/48x48/apps
+keystore-explorer/kse/res/icons/kse_512.png		usr/share/icons/hicolor/512x512/apps
+

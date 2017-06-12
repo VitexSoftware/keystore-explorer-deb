@@ -1,0 +1,31 @@
+#!/usr/bin/make -f
+
+JAVA_HOME=/usr/lib/jvm/default-java
+
+%:
+	dh $@ --with javahelper
+
+#override_dh_link:
+#	dh_link usr/share/kse/kse.jar usr/bin/kse
+
+override_dh_auto_build:
+	dh_auto_build -- dist
+
+override_dh_install:
+	dh_auto_build -- package-debian
+	dh_install
+	chmod +x debian/keystore-explorer/usr/bin/kse
+	rm debian/keystore-explorer/usr/share/java/commons-io.jar
+	rm debian/keystore-explorer/usr/share/java/junit.jar
+	rm debian/keystore-explorer/usr/share/java/bcpkix.jar
+	rm debian/keystore-explorer/usr/share/java/bcprov.jar
+	rm debian/keystore-explorer/usr/share/java/jna.jar
+	mv debian/keystore-explorer/usr/share/icons/hicolor/128x128/apps/kse_128.png		debian/keystore-explorer/usr/share/icons/hicolor/128x128/apps/kse.png
+	mv debian/keystore-explorer/usr/share/icons/hicolor/16x16/apps/kse_16.png		debian/keystore-explorer/usr/share/icons/hicolor/16x16/apps/kse.png
+	mv debian/keystore-explorer/usr/share/icons/hicolor/256x256/apps/kse_256.png		debian/keystore-explorer/usr/share/icons/hicolor/256x256/apps/kse.png
+	mv debian/keystore-explorer/usr/share/icons/hicolor/32x32/apps/kse_32.png		debian/keystore-explorer/usr/share/icons/hicolor/32x32/apps/kse.png
+	mv debian/keystore-explorer/usr/share/icons/hicolor/48x48/apps/kse_48.png		debian/keystore-explorer/usr/share/icons/hicolor/48x48/apps/kse.png
+	mv debian/keystore-explorer/usr/share/icons/hicolor/512x512/apps/kse_512.png		debian/keystore-explorer/usr/share/icons/hicolor/512x512/apps/kse.png
+
+override_jh_exec:
+	exit 0

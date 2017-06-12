@@ -1,0 +1,7 @@
+keystore-explorer (5.3.0-5) UNRELEASED; urgency=medium
+
+  [ Vítězslav Dvořák ]
+  * libjna-java is now dependency
+
+
+ -- vitex <vitex@kickass.vitexsoftware.cz>  Fri, 09 Jun 2017 21:26:03 +0200

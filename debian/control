@@ -1,0 +1,18 @@
+Source: keystore-explorer
+Build-Depends: debhelper (>= 7.0.50~),po-debconf,ant,default-jdk | java-compiler | java-sdk,javahelper
+Standards-Version: 3.8.4
+Maintainer: Vítězslav Dvořák <info@vitexsoftware.cz>
+Uploaders: Vitex <vitex@hippy.cz>
+Priority: optional
+Homepage: http://keystore-explorer.org/
+
+Package: keystore-explorer
+Depends: ${misc:Depends},default-jdk, libcommons-io-java, libbcpkix-java, libbcprov-java, libjna-java
+Architecture: all
+Section: devel
+Priority: optional
+Description: KeyStore Explorer is a free GUI replacement for the Java command-line utilities keytool and jarsigner
+ KeyStore Explorer is an open source GUI replacement for the Java 
+ command-line utilities keytool and jarsigner. KeyStore Explorer 
+ presents their functionality, and more, via an intuitive graphical 
+ user interface.
